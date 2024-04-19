@@ -1,0 +1,114 @@
+body{
+    background-color:#F4E4D9;
+    margin:0;
+    height: 100%;
+    font-family: "YoungSerif", serif;
+    color:hsl(14, 45%, 36%);
+}
+
+.main{
+    background-color: white;
+    width: 50%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    position: relative;
+    left: 25%;
+    padding: 20px;
+    border-radius: 20px ;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc; /* Stile della linea orizzontale */
+    margin: 20px 0; /* Spaziatura sopra e sotto l'hr */
+}
+
+.first{
+    background-color: #FFF7FC;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+li{
+    padding-left: 40px;
+    margin-bottom: 10px;
+}
+
+.instructionList{
+    list-style-type: decimal;
+}
+.instructionList>li::marker{
+     /* Codice Unicode per il bullet point */
+    font-weight: bold; /* Rendi grassetto il bullet point */
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+
+h1,h2{
+    font-family: "Outfit", serif;
+}
+img{
+    width: 100%;
+    border-radius: 10px
+
+}
+
+p{
+    font-size: 16px;
+    font-family: Outfit;
+    font-weight: 400;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse; /* Unisce i bordi delle celle */
+}
+
+/* Stile delle righe della tabella */
+tr {
+    border-bottom: 1px solid #ddd; /* Aggiunge una linea alla fine di ogni riga */
+     /* Spaziatura interna */
+    text-align: left; /* Allineamento del testo */
+}
+
+th{
+    font-weight: 400;
+    padding: 10px;
+}
+
+td{
+    font-weight: 600;
+    padding: 10px;
+}
+@media (max-width: 1000px) {
+    .main{
+        left: 15%;
+        width: 70%;
+    }
+}
+
+@media  (max-width : 425px) {
+    body{
+        background-color: white;
+    }
+    .main{
+        width: 100%;
+        margin: 0;
+        position: static;
+        padding: 0;
+    }
+    img{
+        border-radius: 0;
+    }
+    .main > div{
+        margin: 0 30px;
+    }
+    .first{
+        padding: 20px 40px 20px 20px;
+    }
+}
